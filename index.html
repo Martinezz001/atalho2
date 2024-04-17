@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Real Madrid</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.realmadrid.com/pt-PT" onclick="showPage('home')">Home</a></li>
+                <li><a href="https://www.realmadrid.com/pt-PT/o-clube/contacto" onclick="showPage('contato')">Contato</a></li>
+                <li><a href="https://www.realmadrid.com/pt-PT/noticias" id="sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+<center>
+    <main>
+        <section id="home">
+           
+            <p>Este é um site com um tema focado em um clube de Futebolístico denominado Real Madrid</p>
+            <p>Pressione <strong>Ctrl + Q</strong> para ir para a página Sobre.</p>
+
+            <a href="#" onclick="showPage('sobre')"><img src="https://i.pinimg.com/736x/5e/d5/0f/5ed50f1054c81f5f2725a4ffe453feab.jpg" alt="Escudo Real Madrid" width="100" height="100"></a>
+            <p>Pressione <strong>Ctrl + I</strong> para acessar o link original da imagem.</p>
+<br>
+
+            <form id="formContato" onsubmit="enviarMensagem(); return false;">
+                <label for="mensagem">Mensagem:</label><br>
+                <input type="text" id="mensagem" name="mensagem"><br>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+            <br>
+            <p>Pressione <strong>Ctrl + M</strong> para acessar a área para digitar a mensagem.</p>
+        </section>
+
+        <section id="contato" style="display: none;">
+            <h2>Contato</h2>
+            <!-- Adicione aqui o formulário de contato -->
+        </section>
+
+        <section id="sobre" style="display: none;">
+            <h2>Sobre</h2>
+            <!-- Adicione aqui informações sobre o site -->
+        </section>
+    </main>
+</center>
+    <footer>
+        <h3>Desenvolvido por Matheus Martinez</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
